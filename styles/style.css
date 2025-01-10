@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Figtree-semibold';
+    src: url('../assets/fonts/static/Figtree-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Figtree-bold';
+    src: url('../assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('../assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    /* COLORS: */
+    --yellow: #f3d04e;
+    --gray : #6b6b6b;
+    --black:  #121212;
+    /* FONTS: */
+    --font-semibold: 'Figtree-semibold';
+    --font-bold: 'Figtree-bold';
+    --font-normal: 'Figtree';
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    background-color: var(--yellow);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background-color: white;
+    padding: 25px;
+    width: 375px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 11px 9px 1px black;
+}
+
+section#background {
+    width: 100%;
+    height: 215px;
+    background: var(--yellow) url('../assets/images/illustration-article.svg') no-repeat center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+section#content > h2 {
+    display: inline-block;
+    font-family: var(--font-bold);
+    margin-top: 20px;
+    padding: 7px 15px 7px 15px;
+    background-color: var(--yellow);
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+section#content > p#date {
+    font-family: var(--font-semibold);
+    font-size: 0.8em;
+    margin-top: 15px;
+    color: var(--black);
+}
+
+section#content > a {
+    font-family: var(--font-bold);
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: var(--black);
+}
+
+section#content > a:hover {
+    color: var(--yellow);
+    transition-duration: .5s;
+}
+
+section#content p {
+    font-family: var(--font-normal);
+    margin-top: 20px;
+    color: var(--gray);
+}
+
+section#content > h3  {
+    font-family: var(--font-bold);
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+section#content > h3 > img {
+    margin-right: 10px;
+}
+
+
+.attribution {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.7em;
+}
